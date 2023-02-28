@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Kepler Object Detction</title>
+    </head>
+    <body>
+    <div>
+        <form action="/predict" method="post">
+            
+           <input type="number" step='any' name="koi_score" placeholder='koi_score' required><br>
+           <input type="number" step='any' name="koi_fpflag_nt" placeholder='  koi_fpflag_nt' required><br>
+           <input type="number" step='any' name="koi_fpflag_ss" placeholder='koi_fpflag_ss'  required><br>
+           <input type="number" step='any' name="koi_fpflag_co" placeholder='koi_fpflag_co'  required><br>
+           <input type="number" step='any' name="koi_fpflag_ec" placeholder='koi_fpflag_ec'  required><br>
+           <input type="number" step='any' name="koi_period"  placeholder='koi_period' required><br>
+           <input type="number" step='any' name="koi_time0bk" placeholder='koi_time0bk'  required><br>
+           <input type="number" step='any' name="koi_impact"  placeholder='koi_impact' required><br>
+           <input type="number" step='any' name="koi_duration" placeholder='koi_duration'  required><br>
+           <input type="number" step='any' name="koi_depth"  placeholder='koi_depth' required><br>
+           <input type="number" step='any' name="koi_prad" placeholder='koi_prad'  required><br>
+           <input type="number" step='any' name="koi_teq"  placeholder='koi_teq' required><br>
+           <input type="number" step='any' name="koi_insol"  placeholder='koi_insol' required><br>
+           <input type="number" step='any' name="koi_model_snr" placeholder='koi_model_snr'  required><br>
+           <input type="number" step='any' name="koi_tce_plnt_num" placeholder='koi_tce_plnt_num'  required><br>
+           <input type="number" step='any'  name="koi_steff"  placeholder='koi_steff' required><br>
+           <input type=" number" step='any' name="koi_slogg" placeholder=' koi_slogg'  required><br>
+           <input type="number" step='any'  name="koi_srad"  placeholder='koi_srad' required><br>
+           <input type="number" step='any'  name="ra"  placeholder='ra' required><br>
+           <input type="number" step='any'  name="dec" placeholder='dec'  required><br>
+           <input type="number" step='any'  name="koi_kepmag" placeholder='koi_kepmag'  required><br><br><br>
+
+
+
+
+            <input type="submit" value="Make Predition"><br><br>
+        </form><br><br>
+        {{print_result}}
+    </div>
+    </body>
+
+</html>
+       
